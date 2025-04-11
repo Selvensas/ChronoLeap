@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChronoLeap - Master Time, Conquer the Forest</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700&family=Roboto:wght@300;400;700&display=swap">
+</head>
+<body>
+    <div class="particles-container" id="particles"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/hourglass-icon.png.png" alt="ChronoLeap Logo">
+                <h1>ChronoLeap</h1>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#levels">Levels</a></li>
+                <li><a href="#credits">Credits</a></li>
+                <li><a class="download-btn" href="#download">Download</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch" data-text="ChronoLeap">ChronoLeap</h1>
+                <p class="tagline">Master Time. Conquer the Forest.</p>
+                <p class="description">A time-bending platformer where your control over time is your greatest weapon. Dash through enemies, freeze time, and outsmart AI drones in this challenging adventure.</p>
+                <div class="cta-buttons">
+                    <a href="#download" class="cta-button primary">Download Now</a>
+                    <a href="#trailer" class="cta-button secondary">Watch Trailer</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="time-circle"></div>
+                <img src="images/hourglass-icon.png.png" alt="ChronoLeap Hero Character">
+            </div>
+        </section>
+
+        <section id="features" class="features">
+            <h2 class="section-title">Game Features</h2>
+            <div class="features-container">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/dash.png" alt="Time Dash">
+                    </div>
+                    <h3>Time Dash</h3>
+                    <p>Freeze time and dash through enemies and obstacles with precision and style.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/timefreeze.png" alt="Temporal Freeze">
+                    </div>
+                    <h3>Temporal Freeze</h3>
+                    <p>Stop time completely to analyze your surroundings and plan your next move.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/ai.png" alt="AI Pathfinding Drones">
+                    </div>
+                    <h3>AI Pathfinding Drones</h3>
+                    <p>Outsmart advanced enemy drones that adapt to your movements and tactics.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <img src="images/nature.png" alt="Mystical Forest">
+                    </div>
+                    <h3>Mystical Forest</h3>
+                    <p>Explore a mysterious time-warped forest with ancient secrets to discover.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="trailer" class="trailer">
+            <h2 class="section-title">Game Trailer</h2>
+            <div class="video-container">
+                <div class="video-placeholder">
+                    <div class="play-button"></div>
+                    <img src="images/trailer-thumbnail.png" alt="Game Trailer Thumbnail">
+                </div>
+            </div>
+        </section>
+
+        <!-- COMPLETELY REDESIGNED LEVELS SECTION -->
+        <section id="levels" class="levels">
+            <h2 class="section-title">7 Challenging Levels</h2>
+            
+            <div class="levels-container">
+                <div class="level-navigation">
+                    <button class="level-btn active" data-level="1">1</button>
+                    <button class="level-btn" data-level="2">2</button>
+                    <button class="level-btn" data-level="3">3</button>
+                    <button class="level-btn" data-level="4">4</button>
+                    <button class="level-btn" data-level="5">5</button>
+                    <button class="level-btn" data-level="6">6</button>
+                    <button class="level-btn" data-level="7">7</button>
+                </div>
+                
+                <div class="level-display">
+                    <div class="level-info" id="level-1">
+                        <h3>Forest Beginnings</h3>
+                        <p>Learn the basics of time manipulation in the peaceful outer forest.</p>
+                        <div class="level-image">
+                            <img src="images/level1.png" alt="Level 1">
+                        </div>
+                    </div>
+                    
+                    <div class="level-info" id="level-2" style="display: none;">
+                        <h3>Temporal Trials</h3>
+                        <p>Put your dashing skills to the test with increasingly complex obstacles.</p>
+                        <div class="level-image">
+                            <img src="images/level2.png" alt="Level 2">
+                        </div>
+                    </div>
+                    
+                    <div class="level-info" id="level-3" style="display: none;">
+                        <h3>Drone Patrol</h3>
+                        <p>Face the first AI drones that hunt you through the ancient forest ruins.</p>
+                        <div class="level-image">
+                            <img src="images/level3.png" alt="Level 3">
+                        </div>
+                    </div>
+                    
+                    <div class="level-info" id="level-4" style="display: none;">
+                        <h3>Spike Sanctuary</h3>
+                        <p>Navigate deadly spike traps that require perfect timing and precision.</p>
+                        <div class="level-image">
+                            <img src="images/level4.png" alt="Level 4">
+                        </div>
+                    </div>
+                    
+                    <div class="level-info" id="level-5" style="display: none;">
+                        <h3>Chrono Caverns</h3>
+                        <p>Descend into time-warped caves where physics behaves unpredictably.</p>
+                        <div class="level-image">
+                            <img src="images/level5.png" alt="Level 5">
+                        </div>
+                    </div>
+                    
+                    <div class="level-info" id="level-6" style="display: none;">
+                        <h3>Drone Swarm</h3>
+                        <p>Survive against multiple coordinated AI drones hunting you simultaneously.</p>
+                        <div class="level-image">
+                            <img src="images/level6.png" alt="Level 6">
+                        </div>
+                    </div>
+                    
+                    <div class="level-info" id="level-7" style="display: none;">
+                        <h3>The Timekeeper</h3>
+                        <p>Confront the final challenge and master all your abilities to succeed.</p>
+                        <div class="level-image">
+                            <img src="images/level7.png" alt="Level 7">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="download" class="download">
+            <div class="download-content">
+                <h2>Download ChronoLeap</h2>
+                <p>Available now for Windows, Mac, and Linux</p>
+                <div class="download-options">
+                    <a href="https://drive.google.com/drive/folders/1MuoGsF64YjpdrkfC3aKkgrb-SXXgmJt2?usp=sharing" class="download-button windows" target="_blank" rel="noopener">
+                        <span class="platform-icon">Windows</span>
+                        <span class="download-text">Download for Windows</span>
+                        <span class="file-size">300 MB</span>
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1MuoGsF64YjpdrkfC3aKkgrb-SXXgmJt2?usp=sharing" class="download-button mac" target="_blank" rel="noopener">
+                        <span class="platform-icon">Mac</span>
+                        <span class="download-text">Download for Mac</span>
+                        <span class="file-size">300 MB</span>
+                    </a>
+                    <a href="https://drive.google.com/drive/folders/1MuoGsF64YjpdrkfC3aKkgrb-SXXgmJt2?usp=sharing" class="download-button linux" target="_blank" rel="noopener">
+                        <span class="platform-icon">Linux</span>
+                        <span class="download-text">Download for Linux</span>
+                        <span class="file-size">300 MB</span>
+                    </a>
+                </div>
+            </div>
+            <div class="system-requirements">
+                <h3>System Requirements</h3>
+                <div class="requirements-columns">
+                    <div class="requirements-column">
+                        <h4>Minimum:</h4>
+                        <ul>
+                            <li><strong>OS:</strong> Windows 7 / macOS 10.12 / Ubuntu 16.04</li>
+                            <li><strong>Processor:</strong> Intel Core i3 or AMD equivalent</li>
+                            <li><strong>Memory:</strong> 4 GB RAM</li>
+                            <li><strong>Graphics:</strong> DirectX 11 compatible</li>
+                            <li><strong>Storage:</strong> 2 GB available space</li>
+                        </ul>
+                    </div>
+                    <div class="requirements-column">
+                        <h4>Recommended:</h4>
+                        <ul>
+                            <li><strong>OS:</strong> Windows 10 / macOS 10.15 / Ubuntu 20.04</li>
+                            <li><strong>Processor:</strong> Intel Core i5 or AMD equivalent</li>
+                            <li><strong>Memory:</strong> 8 GB RAM</li>
+                            <li><strong>Graphics:</strong> NVIDIA GeForce GTX 960 or equivalent</li>
+                            <li><strong>Storage:</strong> 2 GB available space (SSD recommended)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Simplified Credits Section -->
+        <section id="credits" class="credits">
+            <div class="credits-content">
+                <h2 class="section-title">Credits</h2>
+                <div class="credits-card">
+                    <div class="credits-team">
+                        <h3>Development Team</h3>
+                        <div class="team-members">
+                            <div class="team-member">
+                                <span class="name">Abdullah </span>
+                                <span class="role">Level Designer</span>
+                            </div>
+                            <div class="team-member">
+                                <span class="name">Mohammed</span>
+                                <span class="role">Gameplay Programmer</span>
+                            </div>
+                          
+                       
+                            <div class="team-member">
+                                <span class="name">Yuosef</span>
+                                <span class="role">Art Director</span>
+                            </div>
+                            <div class="team-member">
+                                <span class="name">Mazen</span>
+                                <span class="role">Character Artist</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="credits-supervisor">
+                        <h3>Supervision</h3>
+                        <div class="team-member">
+                            <span class="name">Dr. Muchaid</span>
+                            <span class="role">Project Supervisor</span>
+                        </div>
+                    </div>
+                    
+                    
+                    
+                    <div class="credits-tools">
+                        <div class="tool-logo">
+                           
+                            <img src="images/unity.png" alt="Made with Unity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/hourglass-icon.png.png" alt="ChronoLeap Logo">
+                <h2>ChronoLeap</h2>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h3>Game</h3>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#levels">Levels</a></li>
+                        <li><a href="#download">Download</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Bug Reports</a></li>
+                        <li><a href="#">Updates</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#credits">Credits</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column social">
+                 
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 ChronoLeap. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
