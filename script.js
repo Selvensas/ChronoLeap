@@ -255,6 +255,10 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   })
+  
+  // Add this at the end of your DOMContentLoaded event listener, just before the closing })
+
+  // Download tracking for Vercel Analytics
   const downloadButtons = document.querySelectorAll('.download-button');
   
   downloadButtons.forEach(button => {
@@ -276,5 +280,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+}) // This is the closing bracket of your main DOMContentLoaded event listener
 
-})
+
