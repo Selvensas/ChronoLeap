@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   // Navigation toggle
+  
   const navToggle = document.getElementById("navToggle")
   const navLinks = document.getElementById("navLinks")
 
@@ -254,4 +255,26 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     })
   })
+  const downloadButtons = document.querySelectorAll('.download-button');
+  
+  downloadButtons.forEach(button => {
+    button.addEventListener('click', function(e) {
+      // Determine which platform was clicked
+      const platform = this.classList.contains('windows') ? 'windows' : 
+                       this.classList.contains('mac') ? 'mac' : 'linux';
+      
+      // Send event to Vercel Analytics
+      if (window.va) {
+        window.va('event', {
+          name: 'game_download',
+          data: { platform: platform }
+        });
+        console.log(`Download tracked: ${platform}`);
+      } else {
+        console.log('Vercel Analytics not available');
+      }
+    });
+  });
+
+
 })
