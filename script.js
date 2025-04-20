@@ -144,7 +144,7 @@ document.addEventListener("DOMContentLoaded", () => {
       playButton.addEventListener("click", () => {
         // Create video element
         const video = document.createElement("video")
-        video.src = "images/gameTrailer.mp4"
+        video.src = "images/GameTrailer.mov" 
         video.controls = true
         video.autoplay = true
         video.className = "trailer-video"
